@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products Page</title>
+
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Material Symbols Outlined -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+
+  <!-- Header with Logo and Navigation -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <span class="material-symbols-outlined">storefront</span> B&M Store
+      </div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Cart</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumbs">
+      <a href="#">Home</a>
+      <span>&gt;</span>
+      <a href="#">Shop</a>
+      <span>&gt;</span>
+      <span>Products</span>
+    </nav>
+
+    <!-- Search, Sort, and Filter Controls (UI Only) -->
+    <div class="controls">
+      <div class="search-group">
+        <input type="text" placeholder="Search..." class="search-input" />
+        <button class="search-btn">Search</button>
+      </div>
+
+      <div class="options-group">
+        <select class="sort-select">
+          <option value="">Sort By</option>
+          <option value="best_sellers">Best Sellers</option>
+          <option value="price_low_to_high">Price Low to High</option>
+          <option value="price_high_to_low">Price High to Low</option>
+        </select>
+
+        <select class="filter-select">
+          <option value="">Filter By</option>
+          <option value="items_on_sale">Items on Sale</option>
+          <option value="skin_care">Skin Care</option>
+          <option value="essentials">Essentials</option>
+        </select>
+
+        <button class="apply-btn">Apply</button>
+      </div>
+    </div>
+
+    <!-- Sale Products Section -->
+    <section class="section">
+      <h2 class="section-title">Sale Products</h2>
+      <div class="products">
+
+        <!-- Product Card 1 -->
+        <div class="product-card sale">
+          <div class="img-wrapper">
+            <span class="sale-badge">Sale</span>
+            <a href="#"><img src="https://images.unsplash.com/photo-1704305861425-8683b791e638?w=600&auto=format&fit=crop&q=60" alt="Product" /></a>
+            <div class="icons">
+              <span class="material-symbols-outlined fav">favorite</span>
+              <span class="material-symbols-outlined cart">shopping_cart</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#">Product Name</a></h3>
+            <p class="price"><del class="old-price">$49.99</del> $29.99</p>
+            <button>View Details</button>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card sale">
+          <div class="img-wrapper">
+            <span class="sale-badge">Sale</span>
+            <a href="#"><img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?w=600&auto=format&fit=crop&q=60" alt="Product" /></a>
+            <div class="icons">
+              <span class="material-symbols-outlined fav">favorite</span>
+              <span class="material-symbols-outlined cart">shopping_cart</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#">Product Name</a></h3>
+            <p class="price"><del class="old-price">$49.99</del> $29.99</p>
+            <button>View Details</button>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card sale">
+          <div class="img-wrapper">
+            <span class="sale-badge">Sale</span>
+            <a href="#"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&auto=format&fit=crop&q=60" alt="Product" /></a>
+            <div class="icons">
+              <span class="material-symbols-outlined fav">favorite</span>
+              <span class="material-symbols-outlined cart">shopping_cart</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#">Product Name</a></h3>
+            <p class="price"><del class="old-price">$49.99</del> $29.99</p>
+            <button>View Details</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- All Products Section -->
+    <section class="section">
+      <h2 class="section-title">All Products</h2>
+      <div class="products">
+
+        <!-- Product Cards (6 Total) -->
+        <div class="product-card">
+          <div class="img-wrapper">
+            <a href="#"><img src="https://images.unsplash.com/photo-1629198735660-e39ea93f5c18?w=600&auto=format&fit=crop&q=60" alt="Product" /></a>
+            <div class="icons">
+              <span class="material-symbols-outlined fav">favorite</span>
+              <span class="material-symbols-outlined cart">shopping_cart</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#">Product Name</a></h3>
+            <p class="price">$39.99</p>
+            <button>View Details</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="img-wrapper">
+            <a href="#"><img src="https://images.unsplash.com/photo-1740490278517-21ec451914f6?w=600&auto=format&fit=crop&q=60" alt="Product" /></a>
+            <div class="icons">
+              <span class="material-symbols-outlined fav">favorite</span>
+              <span class="material-symbols-outlined cart">shopping_cart</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#">Product Name</a></h3>
+            <p class="price">$39.99</p>
+            <button>View Details</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="img-wrapper">
+            <a href="#"><img src="https://images.unsplash.com/photo-1646341743728-091844fe665c?w=600&auto=format&fit=crop&q=60" alt="Product" /></a>
+            <div class="icons">
+              <span class="material-symbols-outlined fav">favorite</span>
+              <span class="material-symbols-outlined cart">shopping_cart</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#">Product Name</a></h3>
+            <p class="price">$39.99</p>
+            <button>View Details</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="img-wrapper">
+            <a href="#"><img src="https://images.unsplash.com/photo-1738721798337-1c0036181229?w=600&auto=format&fit=crop&q=60" alt="Product" /></a>
+            <div class="icons">
+              <span class="material-symbols-outlined fav">favorite</span>
+              <span class="material-symbols-outlined cart">shopping_cart</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#">Product Name</a></h3>
+            <p class="price">$39.99</p>
+            <button>View Details</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="img-wrapper">
+            <a href="#"><img src="https://images.unsplash.com/photo-1731655911208-9356af5dcd50?w=600&auto=format&fit=crop&q=60" alt="Product" /></a>
+            <div class="icons">
+              <span class="material-symbols-outlined fav">favorite</span>
+              <span class="material-symbols-outlined cart">shopping_cart</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#">Product Name</a></h3>
+            <p class="price">$39.99</p>
+            <button>View Details</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="img-wrapper">
+            <a href="#"><img src="https://images.unsplash.com/photo-1646562292875-b5bfa8c00e40?w=600&auto=format&fit=crop&q=60" alt="Product" /></a>
+            <div class="icons">
+              <span class="material-symbols-outlined fav">favorite</span>
+              <span class="material-symbols-outlined cart">shopping_cart</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name"><a href="#">Product Name</a></h3>
+            <p class="price">$59.99</p>
+            <button>View Details</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Pagination Buttons -->
+    <div class="pagination">
+      <button disabled class="page-btn">Previous</button>
+      <button class="active page-no">1</button>
+      <button class="page-no">2</button>
+      <button class="page-no">3</button>
+      <button class="page-no">...</button>
+      <button class="page-btn">Next</button>
+    </div>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>
+      <a href="#">Terms</a> |
+      <a href="#">Privacy</a> |
+      <a href="#">Contact</a><br>
+      &copy; 2025 MyShop
+    </p>
+  </footer>
+
+</body>
+</html>
