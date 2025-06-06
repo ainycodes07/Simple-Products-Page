@@ -1,0 +1,404 @@
+/* -----------------------------------
+  RESET & BASE STYLES
+----------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: black;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkorange;
+}
+
+/* -----------------------------------
+  HEADER
+----------------------------------- */
+header {
+  background-color: darkorange;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1rem 2rem;
+  position: relative;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-links a {
+  display: inline-block;
+  margin-left: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+  transition: transform 0.5s ease;
+}
+
+.nav-links a:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .nav-links a {
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .nav-links a:hover {
+    background: #fff;
+    color: darkorange;
+    transform: scale(1.02);
+  }
+}
+
+/* -----------------------------------
+  BREADCRUMBS
+----------------------------------- */
+.breadcrumbs {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 1rem 1rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: #333;
+}
+
+.breadcrumbs a {
+  color: darkorange;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+.breadcrumbs span {
+  color: #333;
+}
+
+/* -----------------------------------
+  MAIN SECTION
+----------------------------------- */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 2rem 1rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* -----------------------------------
+  CONTROLS
+----------------------------------- */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.search-group,
+.options-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+}
+
+.search-input {
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 200px;
+  max-width: 100%;
+  border-radius: 4px;
+  border: 2px solid darkorange;
+}
+
+.search-btn,
+.apply-btn {
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5rem 1rem;
+  background-color: darkorange;
+  border: 2px solid darkorange;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100px;
+  font-size: 1rem;
+}
+
+.search-btn:hover,
+.apply-btn:hover {
+  background-color: orange;
+  color: white;
+}
+
+.sort-select,
+.filter-select {
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 2px solid orange;
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-group,
+  .options-group {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .search-input,
+  .sort-select,
+  .filter-select,
+  .search-btn,
+  .apply-btn {
+    width: 100%;
+  }
+}
+
+/* -----------------------------------
+  PRODUCTS GRID
+----------------------------------- */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-wrapper img {
+  width: 100%;
+  display: block;
+}
+
+/* Icons */
+.icons {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icons .material-symbols-outlined {
+  background: white;
+  padding: 4px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.icons .fav:hover {
+  background: pink;
+  color: red;
+}
+
+.icons .cart:hover {
+  background: gold;
+}
+
+/* Sale Badge */
+.sale .sale-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: red;
+  color: white;
+  padding: 4px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+/* Product Info */
+.product-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s;
+}
+
+.old-price {
+  color: red;
+}
+
+.price {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Button */
+button {
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  background-color: darkorange;
+  border: 2px solid darkorange;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: transparent;
+  color: darkorange;
+}
+
+/* -----------------------------------
+  PAGINATION
+----------------------------------- */
+.pagination {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.pagination button {
+  margin: 5px;
+  padding: 0.5rem 1rem;
+  border: 1px solid darkorange;
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.pagination .page-btn {
+  max-width: 100px;
+}
+
+.pagination .page-no {
+  max-width: 50px;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: orange;
+}
+
+.pagination button.active {
+  background-color: darkorange;
+  color: white;
+}
+
+.pagination button:disabled {
+  color: gray;
+  cursor: not-allowed;
+}
+
+/* -----------------------------------
+  FOOTER
+----------------------------------- */
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 2;
+}
+
+footer a {
+  margin: 0 1rem;
+  color: inherit;
+}
+
+footer a:hover {
+  color: darkorange;
+  text-decoration: underline;
+}
